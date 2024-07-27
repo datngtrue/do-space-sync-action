@@ -11,6 +11,7 @@ aws_secret_access_key = ${SPACE_SECRET_ACCESS_KEY}" > ~/.aws/credentials
 
 
 echo $*
+env | cat
 ls -lah ${SOURCE_DIR}
 
 aws s3 sync ${SOURCE_DIR} s3://${SPACE_NAME} \

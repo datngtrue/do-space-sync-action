@@ -9,6 +9,8 @@ echo "[default]
 aws_access_key_id = ${SPACE_ACCESS_KEY_ID}
 aws_secret_access_key = ${SPACE_SECRET_ACCESS_KEY}" > ~/.aws/credentials
 
+ls -lah ${SOURCE_DIR}
+
 aws s3 sync ${SOURCE_DIR} s3://${SPACE_NAME} \
             --follow-symlinks \
             --delete \

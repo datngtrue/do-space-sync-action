@@ -11,7 +11,7 @@ LABEL homepage="https://damientimewell.com"
 LABEL maintainer="Damien Timewell <hello@damientimewell.com>"
 
 # https://github.com/aws/aws-cli/blob/master/CHANGELOG.rst
-ENV AWSCLI_VERSION='1.16.232'
+ENV AWSCLI_VERSION='2.17.9'
 
 RUN pip install --quiet --no-cache-dir awscli==${AWSCLI_VERSION}
 

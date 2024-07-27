@@ -1,4 +1,4 @@
-FROM python:3.7-alpine
+FROM python:3.12-alpine
 
 LABEL "com.github.actions.name"="DigitalOcean Space Sync"
 LABEL "com.github.actions.description"="Sync a directory to an DigitalOcean Space"
@@ -11,7 +11,7 @@ LABEL homepage="https://damientimewell.com"
 LABEL maintainer="Damien Timewell <hello@damientimewell.com>"
 
 # https://github.com/aws/aws-cli/blob/master/CHANGELOG.rst
-ENV AWSCLI_VERSION='2.17.9'
+ENV AWSCLI_VERSION='1.33.31'
 
 RUN pip install --quiet --no-cache-dir awscli==${AWSCLI_VERSION}
 
